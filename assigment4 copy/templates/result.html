@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result</title>
+</head>
+
+<body>
+    <h1>Test Result</h1>
+
+    <p>Score: {{ score }} / {{ total }}</p>
+    <p>Submitted at: {{ time }}</p>
+
+    <h3>Your Answers:</h3>
+    <ul>
+        {% for ans in answers %}
+        <li>{{ ans }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Restart</a>
+</body>
+
+</html>
